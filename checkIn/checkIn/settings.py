@@ -68,6 +68,7 @@ MIDDLEWARE_CLASSES = (
 
 CORS_ORIGIN_WHITELIST = (
     'localhost:8080',
+    'node.sangm.net',
 )
 
 ROOT_URLCONF = 'checkIn.urls'
@@ -94,10 +95,21 @@ WSGI_APPLICATION = 'checkIn.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'CHECK_IN',
+        'USER': 'admin',
+        'PASSWORD': 'xSRz2RJG8vVq',
+        'HOST': '192.168.99.100',
+        'PORT': '3306'
     }
 }
 

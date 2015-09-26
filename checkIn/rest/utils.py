@@ -38,16 +38,12 @@ def transfer_students_courses(students, courses, raw_student_data):
 
 
 def save_students():
-    raw_students = RawStudentData.objects.all()
-    students = transfer_students(raw_students)
-
+    students = transfer_students(RawStudentData)
     save_models(students)
 
 
 def save_courses():
-    raw_students = RawStudentData.objects.all()
-    courses = transfer_courses(raw_students)
-
+    courses = transfer_courses(RawStudentData)
     save_models(courses)
 
 
