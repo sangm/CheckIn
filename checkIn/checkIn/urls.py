@@ -15,12 +15,16 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from rest_framework import routers
+from rest_framework.authtoken.views import obtain_auth_token
 from rest import views
 
-router = routers.DefaultRouter()
+router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'students', views.StudentViewSet)
+router.register(r'courses', views.CourseViewSet)
+router.register(r'student-courses', views.StudentCourseViewSet)
 
 urlpatterns = [
-    url(r'^', include(router.urls)),
+    url(r'^v1/', include(router.urls)),
+    url(r'^api/token/', obtain_auth_token, name='api-token'),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]
