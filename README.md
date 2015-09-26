@@ -1,13 +1,5 @@
-I generated mock data from website: https://www.mockaroo.com
-
-sqlite3 import command:
-`.read FILENAME`
-
-set up sqlite3 driver in intellij
-
-# DJANGO Examples
-+ To run shell `python manage.py shell`
-+ To get all raw student data object `a = RawStudentData.object.all()`
+# Tests
++ `python manage.py test`
 
 # Setup MySQL Environment
 + Under checkIn/sql_setup run `./insert_data.sh` that will create the database and insert mock data
@@ -25,3 +17,6 @@ set up sqlite3 driver in intellij
 + I use httpie to send POST request, it's trivial to convert the following command to curl if you do not want to 
 install it
 + `http POST http://localhost:8000/api-token-auth/ username=sangm password=DBPassword`
+
+# Resources
++ I generated mock data from website: (Mockaroo)[https://www.mockaroo.com]
