@@ -1,0 +1,19 @@
+{
+  "name": "angular-frontend",
+  "version": "0.0.0",
+  "homepage": "https://github.com/sangm/CheckIn",
+  "authors": [
+    "Sang Mercado <sang.mercado@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
