@@ -1,6 +1,6 @@
 #!/bin/bash
 USER='admin'
-PASSWORD='xSRz2RJG8vVq'
+PASSWORD='HhhmdDK0VUxN'
 HOST='192.168.99.100'
 PORT='3306'
 DB='CHECK_IN'

@@ -107,7 +107,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'CHECK_IN',
         'USER': 'admin',
-        'PASSWORD': 'xSRz2RJG8vVq',
+        'PASSWORD': 'HhhmdDK0VUxN',
         'HOST': '192.168.99.100',
         'PORT': '3306'
     }
