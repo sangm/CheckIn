@@ -1,6 +1,6 @@
 'use strict';
 
-var apiUrl = 'http://localhost:8000/v1'
+var apiUrl = 'http://api-checkin.sangm.io/v1'
 
 angular
     .module('tutoringLoginApp')

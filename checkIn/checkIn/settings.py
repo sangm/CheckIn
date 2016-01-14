@@ -68,7 +68,7 @@ MIDDLEWARE_CLASSES = (
 
 CORS_ORIGIN_WHITELIST = (
     'localhost:8080',
-    'node.sangm.net',
+    'checkin.sangm.io',
 )
 
 ROOT_URLCONF = 'checkIn.urls'

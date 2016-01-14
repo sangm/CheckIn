@@ -1,0 +1,12 @@
+[Unit]
+Description=gunicorn daemon for CheckIn
+After=network.target
+
+[Service]
+User=sangm
+Group=nginx
+WorkingDirectory=/home/sangm/CheckIn/checkIn
+ExecStart=/home/sangm/CheckIn/checkIn/env/bin/gunicorn --workers 3 --bind 127.0.0.1:8080 checkIn.wsgi:application --log-file /tmp/checkin_error_logs.log
+
+[Install]
+WantedBy=multi-user.target
