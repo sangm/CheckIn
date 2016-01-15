@@ -1,10 +1,12 @@
 # CheckIn
 
-Full Stack Django+MySQL/AngularJS Application
+Full Stack Django+MySQL/(AngularJS/VueJS) Application
 
 Deployed on `Fedora` 
 
 Some of the documentation may refer specifically to Fedora and may not convert to Debian/Ubuntu platforms.
+
+![Mock](images/mockup.png)
 
 ## Virtualenv
 + install virtualenv
